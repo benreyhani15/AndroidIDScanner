@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">IDScanner</string>
+
+    <string name="action_settings">Settings</string>
+</resources>

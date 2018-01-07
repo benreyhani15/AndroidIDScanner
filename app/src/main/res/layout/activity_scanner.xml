@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <SurfaceView
+        android:id="@+id/surface_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"/>
+
+    <io.clubhub.idscanner.ViewFinderView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/view_finder_view"
+        android:background="#0000"/>
+<!--
+        <Button
+            android:id="@+id/button_capture"
+            android:text="Capture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|top"
+            />
+-->
+
+   <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|top"
+        android:id="@+id/stats_textview"
+        android:visibility="gone"/>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|top"
+        style="?android:attr/progressBarStyle"
+        android:id="@+id/decode_spinner"
+        android:visibility="gone"/>
+
+        <ToggleButton
+            android:visibility="gone"
+            android:layout_width="48dp"
+            android:layout_height="40dp"
+            android:id="@+id/toggleSide"
+            android:layout_gravity="top|right"
+            android:button="@drawable/camera_toggle_button"/>
+
+    <ToggleButton
+        android:layout_width="48dp"
+        android:layout_height="40dp"
+        android:id="@+id/toggleFlash"
+        android:layout_gravity="top|left"
+        android:textOn="Flash is on"
+        android:textOff="Flash is off"/>
+</FrameLayout>
